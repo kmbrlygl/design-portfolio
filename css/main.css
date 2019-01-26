@@ -21,7 +21,7 @@ button {
 
 /* grid */
 .container {
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -61,8 +61,26 @@ a {
     font-weight: 700;
     text-decoration: none;
 }
+ul {
+    line-height: 2;
+    list-style-type: none;
+    padding: 0;
+}
 
 .emphasize {
     font-family: p22-mackinac-pro, serif;
     font-weight: 700;
+}
+
+/* main navigation menu */
+.main_menu {
+    background-color: #EAD2C1;
+    letter-spacing: 2px;
+    left: 0;
+    margin: 0;
+    padding: 4rem;
+    position: fixed;
+    top: 0;
+    text-transform: uppercase;
+    width: 18rem;
 }
