@@ -84,3 +84,15 @@ ul {
     text-transform: uppercase;
     width: 18rem;
 }
+
+.hero {
+    height: 40vh;
+    position: relative;
+}
+.hero-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
