@@ -94,6 +94,7 @@ ul {
 .hero {
     height: 60vh;
     position: relative;
+    margin-bottom: 12.5rem;
 }
 .hero-text {
     margin: 0;
@@ -101,6 +102,15 @@ ul {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+/* about */
+.about {
+    display: flex;
+}
+.bio {
+    width: 50%;
+    margin: 0 12.5rem 0 0;
 }
 
 /* work */
@@ -111,7 +121,7 @@ ul {
 }
 
 /* spacing after sections */
-#community, #contact {
+#community, #contact, footer {
     margin: 12.5rem 0;
 }
 
