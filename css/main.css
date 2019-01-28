@@ -44,11 +44,16 @@ h2 {
     font-family: p22-mackinac-pro, serif;
     font-weight: 700;
     font-size: 4rem;
-    border-top: #A54724 .5rem solid;
-    padding-top: 1.5rem;
-    /*margin-right: 90%;*/
-    width: 50%;
 }
+h2:before
+{
+    content: ' ';
+    border: 2px solid #A54724;
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100px;
+}
+
 h3 {
     color: #045866;
     font-size: 2rem;
@@ -95,4 +100,11 @@ ul {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+/* work */
+#work {
+    background-color: #F8FAF7;
+    margin: 12.5rem -30%;
+    padding: 12.5rem 30%;
 }
