@@ -90,8 +90,9 @@ ul {
     width: 18rem;
 }
 
+/*hero section*/
 .hero {
-    height: 40vh;
+    height: 60vh;
     position: relative;
 }
 .hero-text {
@@ -107,4 +108,15 @@ ul {
     background-color: #F8FAF7;
     margin: 12.5rem -30%;
     padding: 12.5rem 30%;
+}
+
+/* spacing after sections */
+#community, #contact {
+    margin: 12.5rem 0;
+}
+
+/*footer*/
+.connect li {
+    display: inline;
+    padding-right: 5rem;
 }
