@@ -10,14 +10,17 @@ body {
     font-family: 'Overpass', sans-serif;
     font-size: 2rem;
 }
-button {
+.cta-button {
+    background-color: white;
+    border: 1px solid #045866;
     color: #A54724;
     font-family: 'Miriam Libre', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    line-height: 3;
     padding: 2rem;
-    border: 1px solid #045866;
 }
+
 
 /* grid */
 .container {
