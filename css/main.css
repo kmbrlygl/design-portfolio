@@ -25,10 +25,15 @@ body {
 img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    margin: 2rem;
 }
 .no-shadow {
     box-shadow: none;
     border-radius: 0;
+}
+.no-marg-pad {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -108,14 +113,15 @@ ul {
 /*hero section*/
 .hero {
     background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
-    height: 60vh;
     position: relative;
-/*    margin-bottom: 12.5rem;*/
+    height: 60vh;
     margin: 0 -30% 12.5rem -30%;
     padding: 12.5rem 30%;
+    z-index: -1;
 }
 .hero-text {
     margin: 0;
+    padding: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -139,7 +145,7 @@ ul {
 }
 
 /* spacing after sections */
-#community, #contact, footer {
+#community, #contact {
     margin: 12.5rem 0;
 }
 
@@ -147,4 +153,9 @@ ul {
 .connect li {
     display: inline;
     padding-right: 5rem;
+}
+footer {
+    background: url(/assets/svgs/footer.svg) bottom center no-repeat;
+    margin: 12.5rem -30% 0 -30%;
+    padding: 12.5rem 30% 6rem 30%;
 }
