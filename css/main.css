@@ -3,7 +3,9 @@
     box-sizing: border-box;
 }
 html {
+    color: #02363F;
     font-size: 8px;
+    font-family: 'Overpass', sans-serif;
 }
 body {
     background-color: #FBF5E8;
