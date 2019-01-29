@@ -23,7 +23,7 @@ body {
     font-family: 'Miriam Libre', sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    line-height: 3;
+    line-height: 4;
     padding: 2rem;
 }
 img {
@@ -161,6 +161,19 @@ ul {
 }
 .featured-details {
     margin-left: 5%;
+}
+.featured-img {
+    background: url(/assets/svgs/project-blob.svg) center no-repeat;
+    background-size: contain;
+    padding: 6rem 0;
+    width: 100%;
+}
+.project-descript {
+    color: #A54724;
+    font-family: p22-mackinac-pro, serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1.15;
 }
 
 /* spacing after sections */
