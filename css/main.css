@@ -180,6 +180,9 @@ ul {
 .bio {
     order: 1;
 }
+.headshot {
+    margin: 0 auto;
+}
 
 /* work */
 #work {
@@ -207,12 +210,6 @@ ul {
     font-weight: 700;
     line-height: 1.2;
 }
-/*.featured-img > img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}*/
-
 /* desktop
 .featured-project {
     display: flex;
