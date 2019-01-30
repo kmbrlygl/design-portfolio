@@ -149,7 +149,7 @@ ul {
 /* hero */
 .hero {
 /*    background: url(/assets/svgs/hero-blob.svg) top right no-repeat;*/
-    padding-top: 18rem;
+    padding-top: 8rem;
 }
 .emphasize {
     font-family: p22-mackinac-pro, serif;
@@ -172,7 +172,7 @@ ul {
 }
 
 /* work */
-#work {
+#work, .growth {
     background-color: #F8FAF7;
     margin: 0 -10%;
     padding: 10rem 10%;
@@ -199,7 +199,7 @@ ul {
 }
 
 /* spacing after sections */
-.about, .community, #contact {
+section {
     margin: 10rem 0;
 }
 
@@ -218,4 +218,12 @@ footer {
 .no-top-rule:before {
     content: ' ';
     border: 0;
+}
+
+/*** ABOUT ****/
+.introduction {
+    padding-top: 8rem;
+}
+.heading > h1 {
+    text-align: center;
 }
