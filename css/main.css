@@ -171,13 +171,21 @@ ul {
 /* about */
 .about {
     display: flex;
+    flex-direction: column;
 }
 .bio {
-    width: 50%;
-    margin: 0 12.5rem 0 0;
+    order: 1;
 }
 
 /* work */
+#work {
+    background-color: #F8FAF7;
+    margin: 0 -10%;
+    padding: 6rem 10%;
+    width: 100vw;
+}
+
+/* desktop
 #work {
     background-color: #F8FAF7;
     left: 50%;
@@ -206,7 +214,7 @@ ul {
     font-size: 4.5rem;
     font-weight: 500;
     line-height: 1.15;
-}
+}*/
 
 /* spacing after sections */
 .about, .community, #contact {
