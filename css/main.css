@@ -1,0 +1,86 @@
+/* general */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 8px;
+}
+body {
+    background-color: #FBF5E8;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2rem;
+}
+button {
+    color: #A54724;
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 2rem;
+    border: 1px solid #045866;
+}
+
+/* grid */
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* typography */
+p {
+    color: #02363F;
+    font-family: 'Overpass', sans-serif; 
+    font-size: 2rem;
+    line-height: 1.5;
+}
+h1 {
+    color: #A54724;
+    font-family: 'Overpass', sans-serif; 
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+h2 {
+    color: #045866;
+    font-family: p22-mackinac-pro, serif;
+    font-weight: 700;
+    font-size: 4rem;
+    border-top: #A54724 .5rem solid;
+    padding-top: 1.5rem;
+    /*margin-right: 90%;*/
+    width: 50%;
+}
+h3 {
+    color: #045866;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+a {
+    color: #045866;
+    font-weight: 700;
+    text-decoration: none;
+}
+ul {
+    line-height: 2;
+    list-style-type: none;
+    padding: 0;
+}
+
+.emphasize {
+    font-family: p22-mackinac-pro, serif;
+    font-weight: 700;
+}
+
+/* main navigation menu */
+.main_menu {
+    background-color: #EAD2C1;
+    letter-spacing: 2px;
+    left: 0;
+    margin: 0;
+    padding: 4rem;
+    position: fixed;
+    top: 0;
+    text-transform: uppercase;
+    width: 18rem;
+}
