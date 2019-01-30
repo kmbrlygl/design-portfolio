@@ -16,13 +16,22 @@
 <body>
     <div class="container">
     <nav class="main_menu">
-        <a href="index.html"><img src="assets/kgrl-logo-primary.svg" alt="KGRL Logo" width="60px"  class="no-shadow no-marg-pad"></a>
-        <ul>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="assets/kgrl-2019-resume.pdf">Résumé</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="kgrl-logo">
+            <a href="index.html"><img src="assets/kgrl-logo-primary.svg" alt="KGRL Logo" class="no-shadow no-marg-pad"></a>
+        </div>
+        <!--Dropdown MENU-->
+        <div class="menu-toggle">
+            <p>+ Menu</p>
+        </div>
+        <!--Desktop MENU-->
+            <div class="full-menu">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="assets/kgrl-2019-resume.pdf">Résumé</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
     </nav>
     <main>
         <section class="introduction">
@@ -42,20 +51,22 @@
         <section id="contact">
             <h2>Don’t be a stranger</h2>
             <p>I’m always down to collaborate or nerd out about design. Feel free to reach out!</p>
-            <a href="mailto:klosenara@gmail.com" class="cta-button">Send Me an Email</a>
+            <div class="center-inline"><a href="mailto:klosenara@gmail.com" class="cta-button">Send Me an Email</a></div>
         </section>
     </main>
     <footer>
-        <h2>Connect with me</h2>
-        <ul class="connect">
-            <li><a href="https://www.instagram.com/thingsmyhands/">Instagram</a></li>
-            <li><a href="https://twitter.com/kmbrlygl">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/klosenara/">LinkedIn</a></li>
-            <li><a href="https://github.com/kmbrlygl">GitHub</a></li>
-            <li><a href="https://dribbble.com/kmbrlygl">Dribbble</a></li>
-            <li><a href="https://www.last.fm/user/small_tuggs">Last.fm</a></li>
-        </ul>
-        © 2019 • Designed and developed by Kimberly Gail Losenara
+        <div class="center-inline"> 
+            <h2 class="no-top-rule">Connect with me</h2>
+            <ul class="connect">
+                <li><a href="https://www.instagram.com/thingsmyhands/">Instagram</a></li>
+                <li><a href="https://twitter.com/kmbrlygl">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/klosenara/">LinkedIn</a></li>
+                <li><a href="https://github.com/kmbrlygl">GitHub</a></li>
+                <li><a href="https://dribbble.com/kmbrlygl">Dribbble</a></li>
+                <li><a href="https://www.last.fm/user/small_tuggs">Last.fm</a></li>
+            </ul>
+            © 2019 • Designed and developed by Kimberly Gail Losenara            
+        </div>
     </footer>
     </div>
 </body>
