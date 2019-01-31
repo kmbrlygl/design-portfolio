@@ -227,3 +227,35 @@ footer {
 .heading > h1 {
     text-align: center;
 }
+
+/*** CASE STUDY ***/
+.overview {
+    padding-top: 4rem;
+}
+.overview h1 {
+    color: #045866;
+    font-family: Overpass, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* make desktop prototype button disappear on mobile*/
+.desktop-proto {
+    display: none;
+}
+.project-nav {
+    background-color: #CAD6CE;
+    margin: 0 -6%;
+    padding: 3rem 6%;
+    text-align: center;
+}
+.project-nav li {
+    display: inline;
+    text-transform: uppercase;
+}
+.copper-blt {
+    color: #A54724;
+}
