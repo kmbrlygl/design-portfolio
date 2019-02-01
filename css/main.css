@@ -43,7 +43,7 @@ body {
 img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 2rem;
+    max-width: 100%;
 }
 .no-shadow {
     box-shadow: none;
@@ -302,7 +302,7 @@ h3 {
     text-transform: uppercase;
 }
 /* Space after subsections */
-.challenge, .solution, #process, .user-stories, .user-flows, #testing, #prototype, #visual, #takeaways  {
+.challenge, .solution, #process, .user-stories, .user-flows, #testing, .hifi-preference, #prototype, #visual, #takeaways  {
     margin: 10rem 0;
 }
 
@@ -357,4 +357,13 @@ h3 {
     font-weight: 700;
     width: 1.2em;
     color: #A54724;
+}
+
+/* image and captions*/
+.preference-test, .hi-fi {
+    line-height: 2;
+    text-align: center;
+}
+.img-cap {
+    margin: 2rem 0;
 }
