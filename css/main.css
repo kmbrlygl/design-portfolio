@@ -32,6 +32,9 @@ body {
     line-height: 4;
     padding: 2rem;
 }
+.btn {
+    text-align: center;
+}
 .center-inline {
     text-align: center;
 }
@@ -101,10 +104,17 @@ ul {
 }
 blockquote {
     color: #045866;
+    border-left: 3px solid #A54724; 
     font-family: 'Miriam Libre', sans-serif;
     line-height: 1.5;
-    margin: 2rem 1rem;
+    margin: 0;
+    padding-left: 2rem;
+}
+.insights {
+    border: 0;
     min-height: 6rem;
+    margin: 2rem 1rem;
+    padding: 0;
 }
 /* percentage dropcap */
 .percentage {
@@ -294,4 +304,23 @@ h3 {
 /* Space after subsections */
 .challenge, .solution, #process, .user-stories, #testing, #prototype, #visual, #takeaways  {
     margin: 10rem 0;
+}
+
+/* user personas */
+.persona-card {
+    background-color: #F8FAF7;
+    border-top: 1rem #A54724 solid;
+    border-radius: 10px;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    width: 90%;
+}
+.persona-heading {
+    color: #A54724;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
 }
