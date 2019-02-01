@@ -302,20 +302,24 @@ h3 {
     text-transform: uppercase;
 }
 /* Space after subsections */
-.challenge, .solution, #process, .user-stories, #testing, #prototype, #visual, #takeaways  {
+.challenge, .solution, #process, .user-stories, .user-flows, #testing, #prototype, #visual, #takeaways  {
     margin: 10rem 0;
 }
 
-/* user personas */
-.persona-card {
+/* cards */
+.card {
     background-color: #F8FAF7;
-    border-top: 1rem #A54724 solid;
     border-radius: 10px;
     margin: 3rem auto;
     padding: 1rem 2rem;
     width: 90%;
 }
-.persona-heading {
+
+/* user personas */
+.persona {
+    border-top: 1rem #A54724 solid;
+}
+.card-heading {
     color: #A54724;
     font-size: 3rem;
     font-weight: 900;
@@ -323,4 +327,34 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 2rem 0;
+}
+
+/* competitors */
+.pros {
+    list-style: none;
+    margin: 0;
+    padding-left: 1.2em;
+    text-indent: -1.2em;    
+}
+.pros > li:before {
+    content: "+";
+    display: block;
+    float: left;
+    font-weight: 700;
+    width: 1.2em;
+    color: #A54724;
+}
+.cons {
+    list-style: none;
+    margin: 0;
+    padding-left: 1.2em;
+    text-indent: -1.2em;    
+}
+.cons > li:before {
+    content: "–";
+    display: block;
+    float: left;
+    font-weight: 700;
+    width: 1.2em;
+    color: #A54724;
 }
