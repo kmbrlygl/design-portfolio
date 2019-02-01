@@ -18,6 +18,9 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+.center-inline {
+    text-align: center;
+}
 
 /* buttons */
 .cta-button {
@@ -33,9 +36,6 @@ body {
     padding: 2rem;
 }
 .btn {
-    text-align: center;
-}
-.center-inline {
     text-align: center;
 }
 
@@ -83,11 +83,19 @@ h2:before
     margin-bottom: 1.5rem;
     width: 100px;
 }
+h3 {
+    color: #045866;
+    letter-spacing: 1.5px;
+    margin-bottom: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
 h4 {
     color: #045866;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
+    line-height: 1.5;
     margin: 4rem 0 1rem 0;
     text-transform: uppercase;
 }
@@ -110,23 +118,7 @@ blockquote {
     margin: 0;
     padding-left: 2rem;
 }
-.insights {
-    border: 0;
-    min-height: 6rem;
-    margin: 2rem 1rem;
-    padding: 0;
-}
-/* percentage dropcap */
-.percentage {
-    color: #A54724;
-    float: left;
-    font-family: p22-mackinac-pro, serif;
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 5rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem 0 0;
-}
+
 
 /* main navigation menu */
 .main_menu {
@@ -254,7 +246,7 @@ footer {
     border: 0;
 }
 
-/*** ABOUT ****/
+/*** ABOUT PAGE ****/
 .introduction {
     padding-top: 8rem;
 }
@@ -262,7 +254,7 @@ footer {
     text-align: center;
 }
 
-/*** CASE STUDY ***/
+/*** CASE STUDY PAGES ***/
 .overview {
     padding-top: 4rem;
 }
@@ -286,6 +278,9 @@ footer {
     padding: 3rem 6%;
     text-align: center;
 }
+.project-nav ul {
+    margin: 0;
+}
 .project-nav li {
     display: inline;
     letter-spacing: 1.5px;
@@ -294,18 +289,37 @@ footer {
 .copper-blt {
     color: #A54724;
 }
-h3 {
-    color: #045866;
-    letter-spacing: 1.5px;
-    margin-bottom: 6rem;
-    text-align: center;
-    text-transform: uppercase;
-}
+
 /* Space after subsections */
-.challenge, .solution, #process, .user-stories, .user-flows, #testing, .hifi-preference, #prototype, #visual, #takeaways  {
+.challenge, #process, .user-stories, .user-flows, #testing, .hifi-preference, #prototype, #visual, .style-guide, .illustrations, #takeaways  {
     margin: 10rem 0;
 }
 
+/* Light gray background sections */
+#overview, #testing, #visual {
+    background-color: #F8FAF7;
+    margin: 0 -10%;
+    padding: 10rem 10%;
+}
+
+/* RESEARCH */
+.insights {
+    border: 0;
+    min-height: 6rem;
+    margin: 2rem 1rem;
+    padding: 0;
+}
+/* percentage dropcap */
+.percentage {
+    color: #A54724;
+    float: left;
+    font-family: p22-mackinac-pro, serif;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 0;
+}
 /* cards */
 .card {
     background-color: #F8FAF7;
@@ -314,7 +328,6 @@ h3 {
     padding: 1rem 2rem;
     width: 90%;
 }
-
 /* user personas */
 .persona {
     border-top: 1rem #A54724 solid;
@@ -328,7 +341,6 @@ h3 {
     text-transform: uppercase;
     margin: 0 0 2rem 0;
 }
-
 /* competitors */
 .pros {
     list-style: none;
@@ -359,11 +371,18 @@ h3 {
     color: #A54724;
 }
 
+
 /* image and captions*/
-.preference-test, .hi-fi {
+.flows, .wireframe, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .illos, .project-preview {
     line-height: 2;
     text-align: center;
 }
 .img-cap {
     margin: 2rem 0;
+    text-align: center;
+}
+
+/* More Projects */
+.project-preview h4 {
+    color: #A54724;
 }
