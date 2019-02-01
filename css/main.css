@@ -84,7 +84,8 @@ h4 {
     color: #045866;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    margin: 4rem 0 1rem 0;
     text-transform: uppercase;
 }
 a {
@@ -95,8 +96,26 @@ a {
 }
 ul {
     line-height: 2;
-    list-style-type: none;
-    padding: 0;
+    margin: 1rem 0 3rem 0;
+    padding: 0 5%;
+}
+blockquote {
+    color: #045866;
+    font-family: 'Miriam Libre', sans-serif;
+    line-height: 1.5;
+    margin: 2rem 1rem;
+    min-height: 6rem;
+}
+/* percentage dropcap */
+.percentage {
+    color: #A54724;
+    float: left;
+    font-family: p22-mackinac-pro, serif;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 0;
 }
 
 /* main navigation menu */
@@ -115,6 +134,11 @@ ul {
     width: 100%;
     height: 100px;
     z-index: 1;
+}
+.main_menu ul {
+    line-height: 2;
+    list-style-type: none;
+    padding: 0;
 }
 .kgrl-logo {
     width: 40px;
@@ -254,8 +278,20 @@ footer {
 }
 .project-nav li {
     display: inline;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 .copper-blt {
     color: #A54724;
+}
+h3 {
+    color: #045866;
+    letter-spacing: 1.5px;
+    margin-bottom: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Space after subsections */
+.challenge, .solution, #process, .user-stories, #testing, #prototype, #visual, #takeaways  {
+    margin: 10rem 0;
 }
