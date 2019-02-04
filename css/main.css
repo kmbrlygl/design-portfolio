@@ -6,6 +6,7 @@ html {
     color: #02363F;
     font-size: 8px;
     font-family: 'Overpass', sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #FBF5E8;
