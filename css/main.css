@@ -125,7 +125,7 @@ blockquote {
 /* main navigation menu */
 .main_menu {
     align-items: center;
-    background-image: url(/assets/svgs/main_menu-sm.svg);
+    background: url(/assets/svgs/main_menu-sm.svg) top center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
