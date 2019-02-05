@@ -156,21 +156,6 @@ blockquote {
 .full-menu {
     display: none;
 }
-/* desktop version
-.main_menu {
-    background-image: url(/assets/svgs/main_menu.svg);
-    letter-spacing: 2px;
-    left: 0;
-    line-height: 2.5;
-    margin: 0;
-    padding: 4rem;
-    position: fixed;
-    top: 0;
-    text-transform: uppercase;
-    width: 170px;
-    height: 350px;
-    z-index: 1;
-}*/
 
 /*** SECTIONS ****/ 
 
@@ -200,16 +185,11 @@ blockquote {
 }
 
 /* work */
-#work, .growth {
-    background-color: #F8FAF7;
-    margin: 0 -10%;
-    padding: 10rem 10%;
-}
 .featured-project {
     display: flex;
     flex-direction: column;
 }
-.heading {
+.heading, .project-title {
     order: -1;
 }
 .featured-img {
@@ -294,12 +274,12 @@ footer {
 }
 
 /* Space after subsections */
-.challenge, #process, .user-stories, .user-flows, #testing, .hifi-preference, #prototype, #visual, .style-guide, .illustrations, #takeaways  {
+.space-bf-af  {
     margin: 10rem 0;
 }
 
 /* Light gray background sections */
-#overview, #testing, #visual {
+.lt-grey-bg {
     background-color: #F8FAF7;
     margin: 0 -10%;
     padding: 10rem 10%;
@@ -390,9 +370,31 @@ footer {
 }
 
 /* MEDIA QUERIES */
+/* Tablet */
 @media screen and (min-width: 768px) {
     .container {
         width: 70%;
+    }
+    .hero {
+        margin: 0;
+    }
+    .hero > * {
+        text-align: left;
+    }
+    .about {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .headshot {
+        margin: 0;
+    }
+    .heading {
+        width: 60%;
+    }
+    .bio {
+        margin-top: -33rem;
+        width: 60%;
     }
     .menu-toggle {
         display: none;
@@ -403,13 +405,13 @@ footer {
         padding-top: 2rem;
         width: 100%;
     }
+    .kgrl-logo img {
+        width: 60px;
+    }
     .kgrl-logo {
         padding: 0;
         text-align: left;
         width: 100%;
-    }
-    .kgrl-logo img {
-        width: 60px;
     }
     .main_menu {
         background: url(/assets/svgs/main_menu.svg) top left no-repeat;
@@ -422,5 +424,33 @@ footer {
         top: 0;
         width: 170px;
         z-index: 1;
+    }
+    .lt-grey-bg {
+        margin: 0 -30%;
+        padding: 10rem 30%;
+    }
+    .featured-project {
+        align-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .project-title {
+        width: 40%;
+    }
+    .featured-img {
+        order: -1;
+        width: 60%;
+    }
+    .featured-details {
+        margin-top: -44rem;
+        width: 40%;
+    }
+    .btn {
+        text-align: left;
+    }
+    footer {
+        margin: 0 -30%;
+        padding: 5rem 30% 3rem 30%;
     }
 }
