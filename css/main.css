@@ -375,11 +375,14 @@ footer {
     .container {
         width: 70%;
     }
-    .hero {
+    .hero, .introduction {
         margin: 0;
     }
     .hero > * {
         text-align: left;
+    }
+    .img-cap {
+        text-align: inherit;
     }
     .about {
         flex-direction: row;
@@ -429,6 +432,11 @@ footer {
         margin: 0 -30%;
         padding: 10rem 30%;
     }
+    footer {
+        margin: 0 -30%;
+        padding: 5rem 30% 3rem 30%;
+    }
+    /* HOME PAGE */
     .featured-project {
         align-content: space-between;
         flex-direction: row;
@@ -449,8 +457,32 @@ footer {
     .btn {
         text-align: left;
     }
-    footer {
-        margin: 0 -30%;
-        padding: 5rem 30% 3rem 30%;
+    /* ABOUT */
+    .introduction, .growth {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
+    .intro-hero, .intro-bio {
+        width: 60%;
+        padding-left: 5%;
+    }
+
+    .intro-bio {
+        margin-top: -42rem;
+    }
+    .cont-growth {
+        margin-top: -60rem;
+    }
+    .bio-photo {
+        order: -1;
+    }
+    .bio-imgs {
+        width: 35%;
+        order: -1;
+        align-items: flex-start;
+    }
+
+
 }
