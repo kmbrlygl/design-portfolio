@@ -374,7 +374,6 @@ footer {
     color: #A54724;
 }
 
-
 /* image and captions*/
 .flows, .wireframe, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .illos, .project-preview {
     line-height: 2;
@@ -388,4 +387,40 @@ footer {
 /* More Projects */
 .project-preview h4 {
     color: #A54724;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .full-menu {
+        display: initial;
+        margin: 0;
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .kgrl-logo {
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+    .kgrl-logo img {
+        width: 60px;
+    }
+    .main_menu {
+        background: url(/assets/svgs/main_menu.svg) top left no-repeat;
+        flex-direction: column;
+        height: 350px;
+        left: 0;
+        margin: 0;
+        padding: 4rem;
+        position: fixed;
+        top: 0;
+        width: 170px;
+        z-index: 1;
+    }
 }
