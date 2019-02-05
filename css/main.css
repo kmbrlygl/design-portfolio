@@ -241,11 +241,12 @@ footer {
     background: url(/assets/svgs/footer.svg) bottom center no-repeat;
     background-size: cover;
     margin: 0 -10%;
-    padding: 5rem 10% 1rem 10%;
+    padding: 5rem 10% 3rem 10%;
 }
 .no-top-rule:before {
     content: ' ';
     border: 0;
+    margin: 3rem 0;
 }
 
 /*** ABOUT PAGE ****/
