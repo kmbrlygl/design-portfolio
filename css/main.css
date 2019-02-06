@@ -411,7 +411,7 @@ footer {
     }
 
     /* About Me */
-    .introduction, .growth {
+    /* .introduction, .growth {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -431,7 +431,7 @@ footer {
         width: 35%;
         order: -1;
         align-items: flex-start;
-    }
+    } */
 
     /* Case Study */
 
@@ -491,10 +491,30 @@ footer {
     }
 
     /* About Me */
+    /* Commenting out to work on Tablet first
     .introduction {
         background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
         background-position-x: 95%;
         margin: 0 -30%;
         padding: 10rem 30%;
     }
+    .introduction, .growth {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .introduction {
+        max-height: 125rem;
+    }
+    .growth {
+        max-height: 112rem;
+    }
+    .bio-photo {
+        order: -1;
+        margin-bottom: 65rem;
+        width: 40%;
+    }
+    .intro-hero, .intro-bio, .cont-growth {
+        margin-left: 5%;
+        width: 55%;
+    } */
 }
