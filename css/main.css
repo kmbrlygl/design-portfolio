@@ -489,30 +489,14 @@ footer {
     }
 
     /* About Me */
-    /* Commenting out to work on Tablet first
     .introduction {
         background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
         background-position-x: 95%;
         margin: 0 -30%;
+        max-height: 134rem;
         padding: 10rem 30%;
     }
-    .introduction, .growth {
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .introduction {
-        max-height: 125rem;
-    }
     .growth {
-        max-height: 112rem;
+        max-height: 130rem;
     }
-    .bio-photo {
-        order: -1;
-        margin-bottom: 65rem;
-        width: 40%;
-    }
-    .intro-hero, .intro-bio, .cont-growth {
-        margin-left: 5%;
-        width: 55%;
-    } */
 }
