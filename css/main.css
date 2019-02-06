@@ -411,27 +411,25 @@ footer {
     }
 
     /* About Me */
-    /* .introduction, .growth {
+    .introduction, .growth {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        flex-flow: column wrap;
+    }
+    .introduction {
+        max-height: 165rem;
+    }
+    .growth {
+        max-height: 170rem;
+    }
+    .bio-photo {
+        margin-bottom: 81rem;
+        order: -1;
+        width: 45%;
     }
     .intro-hero, .intro-bio {
-        width: 60%;
         margin-left: 5%;
+        width: 50%;
     }
-    .intro-bio {
-        margin-top: -35%;
-    }
-    .cont-growth {
-        margin-top: -55%;
-    }
-    .bio-photo, .bio-imgs {
-        width: 35%;
-        order: -1;
-        align-items: flex-start;
-    } */
 
     /* Case Study */
 
