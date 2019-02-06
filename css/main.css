@@ -205,6 +205,9 @@ blockquote {
     font-weight: 700;
     line-height: 1.2;
 }
+.community img {
+    margin: 0 1rem 2rem 0
+}
 
 /* spacing after sections */
 section {
@@ -370,16 +373,100 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
 /* Tablet */
 @media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .lt-grey-bg {
+        margin: 0 -20%;
+        padding: 10rem 20%;
+    }
+    footer {
+        margin: 0 -20%;
+        padding: 5rem 20% 3rem 20%;
+    }
+
+    /* Homepage */
+    .hero {
+        background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
+        margin: 0 -20%;
+        padding: 18rem 20%;
+    }
+    .hero > * {
+        text-align: initial;
+    }
+    .btn {
+        text-align: initial;
+    }
+    .about {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .heading {
+        width: 40%;
+    }
+    .headshot {
+        margin: 0;
+    }
+    .bio {
+        width: 40%;
+        margin-top: -29rem;
+    }
+    .featured-project {
+        align-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .project-title {
+        width: 50%;
+        margin: 0 0 0 5%;
+    }
+    .project-title h4 {
+        margin: 0;
+    }
+    .featured-img {
+        padding: 2rem;
+        order: -1;
+        width: 45%;
+    }
+    .featured-details {
+        margin-top: -30%;
+        width: 50%;
+    }
+
+    /* About Tablet */
+    .introduction, .growth {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .intro-hero, .intro-bio {
+        width: 60%;
+        margin-left: 5%;
+    }
+    .intro-bio {
+        margin-top: -35%;
+    }
+    .cont-growth {
+        margin-top: -55%;
+    }
+    .bio-photo, .bio-imgs {
+        width: 35%;
+        order: -1;
+        align-items: flex-start;
+    }
+}
+/* @media screen and (min-width: 768px) {
     .container {
         width: 70%;
     }
     .hero, .introduction {
         margin: 0;
-    }
-    .hero > * {
-        text-align: left;
     }
     .img-cap {
         text-align: inherit;
@@ -435,9 +522,9 @@ footer {
     footer {
         margin: 0 -30%;
         padding: 5rem 30% 3rem 30%;
-    }
+    } */
     /* HOME PAGE */
-    .featured-project {
+    /* .featured-project {
         align-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
@@ -456,9 +543,9 @@ footer {
     }
     .btn {
         text-align: left;
-    }
+    } */
     /* ABOUT */
-    .introduction, .growth {
+    /* .introduction, .growth {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -485,4 +572,10 @@ footer {
     }
 
 
-}
+} */
+/* DESKTOP */
+/* @media and (min-width: 992px) {
+    .container {
+        width: 70%;
+    }
+} */
