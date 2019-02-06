@@ -560,7 +560,6 @@ footer {
         padding-top: 2rem;
         width: 100%;
     }
-
     .kgrl-logo img {
         width: 60px;
     }
@@ -596,5 +595,13 @@ footer {
     }
     .heading, .bio {
         width: 50%;
+    }
+
+    /* About Me */
+    .introduction {
+        background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
+        background-position-x: 95%;
+        margin: 0 -30%;
+        padding: 10rem 30%;
     }
 }
