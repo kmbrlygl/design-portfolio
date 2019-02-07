@@ -425,19 +425,25 @@ footer {
         flex-flow: column wrap;
     }
     .introduction {
-        max-height: 165rem;
+        max-height: 152rem;
     }
     .growth {
-        max-height: 170rem;
+        max-height: 209rem;
     }
-    .bio-photo {
-        margin-bottom: 81rem;
+    .bio-photo, .bio-imgs {
         order: -1;
         width: 45%;
+    }
+    .bio-imgs {
+        margin-bottom: 120rem;
     }
     .intro-hero, .intro-bio {
         margin-left: 5%;
         width: 50%;
+    }
+    .resume {
+        margin-bottom: 60rem;
+        order: -1;
     }
 
     /* Case Study */
