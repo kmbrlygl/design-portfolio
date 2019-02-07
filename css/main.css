@@ -233,6 +233,9 @@ footer {
     text-align: center;
     text-transform: uppercase;
 }
+.overview > * {
+    text-align: center;
+}
 /* make desktop prototype button disappear on mobile*/
 .desktop-proto {
     display: none;
@@ -258,6 +261,9 @@ footer {
 /* Space after subsections */
 .space-bf-af  {
     margin: 10rem 0;
+}
+.space-bf-af-sub {
+    margin: 10rem 0 5rem 0;
 }
 
 /* Light gray background sections */
@@ -290,12 +296,12 @@ footer {
     background-color: #F8FAF7;
     border-radius: 10px;
     margin: 3rem auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
     width: 90%;
 }
 /* user personas */
 .persona {
-    border-top: 1rem #A54724 solid;
+    border-top: 5px #A54724 solid;
 }
 .card-heading {
     color: #A54724;
@@ -337,7 +343,7 @@ footer {
 }
 
 /* image and captions*/
-.flows, .wireframe, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .illos, .project-preview {
+.flows, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .illos, .project-preview {
     line-height: 2;
     text-align: center;
 }
@@ -358,9 +364,13 @@ footer {
     .container {
         width: 80%;
     }
-    .lt-grey-bg {
-        margin: 0 -20%;
-        padding: 10rem 20%;
+    /* Full bleed backgrounds */
+    .tab-full {
+    margin: 0 -20%;
+    padding: 10rem 20%;       
+    }
+    ul {
+        padding: 0 10%;
     }
     footer {
         margin: 0 -20%;
@@ -431,7 +441,49 @@ footer {
     }
 
     /* Case Study */
-
+    .overview {
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 50rem;
+    }
+    .overview > *, .overview h1 {
+        text-align: left;
+    }
+    .project-heading, .hero-details, .proto-links {
+        width: 50%;
+    }
+    .crue-hero {
+        order: 2;
+        padding-top: 5rem;
+        width: 55%;
+    }
+    .project-nav {
+        padding: 6% 20%;
+    }
+    .project-details, .row-sections {
+        display: flex;
+        justify-content: space-between;
+    }
+    .headings {
+        width: 30%;
+    }
+    .three-col h4, .two-col p {
+        margin-top: 0;
+    }
+    .two-col {
+        width: 60%;
+    }
+    .card {
+        margin: 3rem 0;
+        width: 47.5%;
+    }
+    .demo {
+        margin: 5rem 0;
+    }
+    .demo-text {
+        margin-left: 5%;
+        width: 50%;
+    }
 }
 
 
@@ -471,8 +523,8 @@ footer {
         z-index: 1;
     }
     .lt-grey-bg {
-        margin: 0 -30%;
-        padding: 10rem 30%;
+        /* margin: 0 -30%;
+        padding: 10rem 30%; */
     }
     footer {
         margin: 0 -30%;
