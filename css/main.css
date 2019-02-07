@@ -116,7 +116,7 @@ blockquote {
     border-left: 3px solid #A54724; 
     font-family: 'Miriam Libre', sans-serif;
     line-height: 1.5;
-    margin: 0;
+    margin: 1rem 0 2rem 0;
     padding-left: 2rem;
 }
 
@@ -467,7 +467,7 @@ footer {
     .headings {
         width: 30%;
     }
-    .three-col h4, .two-col p {
+    .three-col h4, .two-col h4, .two-col p {
         margin-top: 0;
     }
     .two-col {
@@ -483,6 +483,13 @@ footer {
     .demo-text {
         margin-left: 5%;
         width: 50%;
+    }
+    .mobile-hifi {
+        width: 47.5%;
+    }
+    .project-preview {
+        align-self: flex-end;
+        width: 45%;
     }
 }
 
