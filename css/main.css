@@ -348,6 +348,7 @@ footer {
     text-align: center;
 }
 .img-cap {
+    font-style: italic;
     margin: 2rem 0;
     text-align: center;
 }
@@ -365,7 +366,7 @@ footer {
         width: 80%;
     }
     /* Full bleed backgrounds */
-    .tab-full {
+    .full {
     margin: 0 -20%;
     padding: 10rem 20%;       
     }
@@ -378,6 +379,9 @@ footer {
     }
     .btn {
         text-align: initial;
+    }
+    .img-cap {
+        text-align: left; 
     }
 
     /* Homepage */
@@ -535,9 +539,9 @@ footer {
         width: 170px;
         z-index: 1;
     }
-    .lt-grey-bg {
-        /* margin: 0 -30%;
-        padding: 10rem 30%; */
+    .full {
+        margin: 0 -30%;
+        padding: 10rem 30%;       
     }
     footer {
         margin: 0 -30%;
@@ -557,10 +561,37 @@ footer {
         background: url(/assets/svgs/hero-blob.svg) top right no-repeat;
         background-position-x: 95%;
         margin: 0 -30%;
-        max-height: 134rem;
+        max-height: 104rem;
         padding: 10rem 30%;
     }
     .growth {
-        max-height: 130rem;
+        max-height: 127rem;
+    }
+    .resume {
+        margin-bottom: 18rem;
+    }
+    .bio-photo, .bio-imgs {
+        width: 30%;
+    }
+    .intro-hero, .intro-bio {
+        margin-left: 5%;
+        width: 65%;
+    }
+
+    /* Case Study */
+    .overview {
+        padding-top: 0;
+    }
+    .crue-hero {
+        margin-left: 5%;
+        padding-top: 0;
+    }
+    .project-nav {
+        padding: 3rem 30%;
+    }
+    .project-nav ul {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
 }
