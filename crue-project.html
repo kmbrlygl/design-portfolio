@@ -53,8 +53,8 @@
             <ul>
                 <li><a href="#overview">Overview</a><span class="copper-blt"> • </span></li>
                 <li><a href="#process">Process</a><span class="copper-blt"> • </span></li>
-                <li><a href="#testing">Prototyping & Testing</a><span class="copper-blt"> • </span></li>
-                <li><a href="#visual">Final Design</a><span class="copper-blt"> • </span></li>
+                <li><a href="#testing">Execution & Testing</a><span class="copper-blt"> • </span></li>
+                <li><a href="#final-designs">Final Design</a><span class="copper-blt"> • </span></li>
                 <li><a href="#visual">Visual Design</a><span class="copper-blt"> • </span></li>
                 <li><a href="#takeaways">Takeaways</a></li>
             </ul>
@@ -157,7 +157,7 @@
                         <li>View recent files <em>in order to</em> easily find or share it on the go</li>    
                     </ul>
                     <div class="btn">
-                        <a href="https://www.notion.so/bewildercreative/Case-Study-Crue-Web-App-b35cca3eba71446f91c40ca75421f6e4#c7820eac8f874a48bccd3cba360bf821"><button class="cta-button">View All User Stories</button></a>
+                        <a href="https://www.notion.so/9fc076aa1e3843e8acab54bf61b761f2?v=9d66f85b61f240e09ed6321212fa2baa" target="_blank"><button class="cta-button">View All User Stories</button></a>
                     </div>                    
                 </div>
             </div>
@@ -169,15 +169,15 @@
                     <p>Quantitative data aside, it was time to gather qualitative data to create personas. I interviewed three people (from the survey) over the phone to talk in-depth about their experiences with cloud storage. From their background and insights, I created these personas to establish our target audience: <strong>Startup Creative</strong>, <strong>Career Changer</strong>, <strong>Jack of All Trades</strong>.</p>                    
                 </div>
             </div>
-            <div class="row-sections">
+            <div class="row-sections space-around">
                 <div class="persona card">
                     <div class="center-inline">
                         <img src="assets/crue/startup-creative.jpg" alt="Professional woman">
                     </div>
-                    <p class="card-heading">Startup Creative</p>
+                    <p class="card-title">Startup Creative</p>
                     <div>
                         <blockquote>[I need] robust file preview functionalities — being able to view PSDs and AIs are a must!</blockquote>
-                        <p>Frustrations</p>
+                        <p class="card-heading">Frustrations</p>
                         <ul>
                             <li>Unable to see previews of .AI or .PSD (Adobe design files)</li>
                             <li>File organization & behaviors are not intuitive (you can't right-click or drag files) on Dropbox web UI</li>
@@ -188,25 +188,25 @@
                     <div class="center-inline">
                         <img src="assets/crue/career-changer.jpg" alt="Woman on the go">
                     </div>
-                    <p class="card-heading">Career Changer</p>
+                    <p class="card-title">Career Changer</p>
                     <div>
                         <blockquote>I love being able to create docs online, but I’m not the biggest fan of cloud organization.</blockquote>
-                        <h4>Frustrations</h4>
+                        <p class="card-heading">Frustrations</p>
                         <ul>
                             <li>Google Drive’s organization of files & folders is unintuitive and messy</li>
                             <li>Logging into Google can be a pain without your phone if you have 2-step authentication</li>
                             <li>Google sheets doesn’t have full capabilities of Excel</li>
                         </ul>                        
                     </div>
-                </div>                  
-            </div>  
-                <!--<div class="persona-card">
+                </div>
+                <!-- <div class="persona card">
                     <img src="https://via.placeholder.com/150" alt="Smiling young man">
-                    <h4>jack of all trades</h4>
+                    <p class="card-title">Jack of all trades</p>
                     <blockquote>Dropbox is more of an archive, G-Drive is what I actively use. I buy into each for different purposes. </blockquote>
-                    <h4>Frustrations</h4>
+                    <p class="card-heading">Frustrations</p>
                     <p>Not having access when you don't have internet</p>
                 </div>-->
+            </div>  
             <div class="row-sections space-bf-af-sub">
                 <div class="headings">
                     <h2>Looking outwards to competitors</h2>
@@ -321,20 +321,20 @@
                 <div class="preference-test demo">
                     <h4>File Menu Placement</h4>
                     <div class="row-sections">
-                        <div class="img-cap">
-                            <img src="assets/crue/filemenu-a.png" alt="File menu placement on bottom" class="no-shadow"><br>A. bottom menu = <strong>8%</strong>
+                        <div class="img-cap pref-option">
+                            <img src="assets/crue/filemenu-a.png" alt="File menu placement on bottom"><br>A. bottom menu = <strong>8%</strong>
                         </div>
-                        <div class="img-cap">
-                            <img src="assets/crue/filemenu-b.png" alt="File menu placement on right" class="no-shadow"><br>B. right side menu = <strong>92%</strong>
+                        <div class="img-cap pref-option winner">
+                            <img src="assets/crue/filemenu-b.png" alt="File menu placement on right"><br>B. right side menu = <strong>92%</strong>
                         </div>
                     </div>
                     <h4>Create Screen</h4>
                     <div class="row-sections">
-                        <div class="img-cap">
-                            <img src="assets/crue/create-a.png" alt="Traditional create menu" class="no-shadow"><br>A. traditional menu = <strong>19%</strong>
+                        <div class="img-cap pref-option winner">
+                            <img src="assets/crue/create-b.png" alt="Modal create window popup"><br>A. modal window popup = <strong>81%</strong>
                         </div>
-                        <div class="img-cap">
-                            <img src="assets/crue/create-b.png" alt="Modal create window popup" class="no-shadow"><br>B. modal window popup = <strong>81%</strong>
+                        <div class="img-cap pref-option">
+                            <img src="assets/crue/create-a.png" alt="Traditional create menu"><br>B. traditional menu = <strong>19%</strong>
                         </div>
                     </div>
                 </div>    
@@ -357,7 +357,7 @@
                 <h4>Final High-fidelity Screens</h4>
                 <div class="img-cap"><img src="assets/crue/hifi-dashboard-file.png" alt="Internal Dashboard File Menu"><br>Internal Dashboard (Desktop)</div>
                 <div class="img-cap"><img src="assets/crue/hifi-create-doc.png" alt="Create Document Screen Desktop"><br>Create Document Screen (Desktop)</div>
-                <div class="row-sections">
+                <div class="row-sections space-around">
                     <div class="img-cap mobile-hifi"><img src="assets/crue/hifi-landing-mobile.gif" alt="Landing page on mobile"><br>Landing Page (Mobile)</div>
                     <div class="img-cap mobile-hifi"><img src="assets/crue/hifi-dashboard-mobile.gif" alt="Dashboard screen mobile"><br>Dashboard Screen (Mobile)</div>
                 </div>
@@ -407,15 +407,13 @@
                     <p>After developing the logo, I became inspired by the geometric shapes within it. I wanted to find ways to incorporate the motif throughout. I pushed my skills and ventured into creating simple digital illustrations in a loose pen style. Fortunately, my gamble worked out as the illustrations helped bring texture and creative energy to the landing page.</p>
                 </div>
             </div>
-            <div class="row-sections">
+            <div class="row-sections space-around">
                 <div class="img-cap mobile">
                     <img src="assets/crue/crue-integrate_apps.png" alt="Integration illustration" class="no-shadow"><br>Integration
                 </div>
                 <div class="img-cap">
                     <img src="assets/crue/crue-organize-2.png" alt="Organizing files illustration" class="no-shadow"><br>Organizing files
                 </div>
-            </div>
-            <div class="row-sections">
                 <div class="img-cap">
                     <img src="assets/crue/crue-save_links.png" alt="Saving links illustration" class="no-shadow"><br>Saving links
                 </div>

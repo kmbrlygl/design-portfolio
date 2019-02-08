@@ -223,11 +223,11 @@ footer {
 .overview {
     padding-top: 4rem;
 }
-.overview h1 {
+.overview h1, .featured-heading {
     color: #045866;
     font-family: Overpass, sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1.25px;
     line-height: 2;
     text-align: center;
@@ -303,14 +303,24 @@ footer {
 .persona {
     border-top: 5px #A54724 solid;
 }
-.card-heading {
+.card-title {
     color: #A54724;
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: 900;
     letter-spacing: 1.5px;
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 2rem 0;
+}
+.card-heading {
+    color: #045866;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 /* competitors */
 .pros {
@@ -343,7 +353,7 @@ footer {
 }
 
 /* image and captions*/
-.flows, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .illos, .project-preview {
+.flows, .preference-test, .hi-fi, .logo-prog, .style-guide-pages, .project-preview {
     line-height: 2;
     text-align: center;
 }
@@ -351,6 +361,15 @@ footer {
     font-style: italic;
     margin: 2rem 0;
     text-align: center;
+}
+
+/* Preference test */
+.pref-option {
+    padding: 1.5rem;
+}
+.winner {
+    border: 2px solid #EAD2C1;
+    border-radius: 10px;
 }
 
 /* More Projects */
@@ -373,16 +392,17 @@ footer {
     ul {
         padding: 0 10%;
     }
+    .btn {
+        text-align: initial;
+    }
+    .left {
+        text-align: left;
+    }
     footer {
         margin: 0 -20%;
         padding: 5rem 20% 3rem 20%;
     }
-    .btn {
-        text-align: initial;
-    }
-    .img-cap {
-        text-align: left; 
-    }
+
 
     /* Homepage */
     .hero {
@@ -456,7 +476,7 @@ footer {
         flex-flow: column wrap;
         max-height: 50rem;
     }
-    .overview > *, .overview h1 {
+    .overview > *, .overview h1, .featured-heading {
         text-align: left;
     }
     .project-heading, .hero-details, .proto-links {
@@ -493,6 +513,9 @@ footer {
     .demo-text {
         margin-left: 5%;
         width: 50%;
+    }
+    .pref-option {
+        width: 45%;
     }
     .mobile-hifi {
         width: 47.5%;
@@ -555,6 +578,9 @@ footer {
     .heading, .bio {
         width: 50%;
     }
+    .project-descript {
+        font-size: 4rem;
+    }
 
     /* About Me */
     .introduction {
@@ -588,10 +614,29 @@ footer {
     }
     .project-nav {
         padding: 3rem 30%;
+        text-align: left;
     }
     .project-nav ul {
+        font-size: 2rem;
+        padding: 0;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+    }
+    .three-col {
+        width: 25%;
+    }
+    .card {
+        width: 31.5%;
+    }
+    .space-around {
+        justify-content: space-around;
+    }
+    .persona {
+        width: 40%;
+    }
+    .demo-text {
+        margin-left: 0;
+        width: 60%;
     }
 }
