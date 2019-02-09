@@ -126,7 +126,7 @@ blockquote {
     align-items: center;
     background: url(/assets/svgs/main_menu-sm.svg) top center no-repeat;
     background-size: cover;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     letter-spacing: 2px;
     left: 0;
@@ -145,15 +145,93 @@ blockquote {
 }
 .kgrl-logo {
     width: 40px;
-    padding: 2rem 0;
+    padding: 0;
+    z-index: 2;
 }
-.menu-toggle > p {
+.menu-toggle > label {
     color: #045866;
     font-size: 2.5rem;
     font-weight: 700;
 }
 .full-menu {
     display: none;
+}
+/* Mobile MENU  */
+input {
+    display: none;
+}
+.open {
+    cursor: pointer;
+}
+.menuOpen {
+    float: right;
+    margin-top: -5.5rem;
+}
+.mobile {
+    margin: 3rem 0 0 3rem;
+}
+.mobileMenu {
+    background-color: #EAD2C1;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+.mobileMenu label {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    background-size: 100%;
+    cursor: pointer;
+}
+.mobileMenu p {
+    color: #045866;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.mobileMenu .menuContent {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30rem;
+}
+.menuContent ul {
+    font-size: 4rem;
+    line-height: 2;
+    list-style: none;
+}
+.menuContent ul li a:hover {
+    color: #02363F;
+    transition: color .5s;
+}
+.menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.menuEffects ul {
+    transform: translateY(0%);
+    transition: all .5s;
+}
+#menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transform: opacity 0.5s;
+}
+#menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+}
+#menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+}
+#menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+}
+.menuContent ul li a:active ~ .mobileEffects {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /*** SECTIONS ****/ 
@@ -552,6 +630,7 @@ footer {
     }
     .main_menu {
         background: url(/assets/svgs/main_menu.svg) top left no-repeat;
+        display: flex;
         flex-direction: column;
         height: 350px;
         left: 0;
