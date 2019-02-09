@@ -25,15 +25,15 @@ body {
 
 /* buttons */
 .cta-button {
-    background-color: white;
-    border: 1px solid #045866;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    border: 1px solid #A54724;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); */
     border-radius: 10px;
     color: #A54724;
     font-family: 'Miriam Libre', sans-serif;
-    font-weight: 700;
     font-size: 2rem;
     padding: 2rem;
+    text-transform: uppercase;
 }
 .btn {
     text-align: center;
@@ -105,6 +105,13 @@ a {
     text-align: center;
     text-decoration: none;
 }
+a button:hover {
+    color: #F8FAF7;
+    background-color: #A54724;
+    border: 1px solid #A54724;
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
 
 ul {
     font-size: 2.25rem;
@@ -149,11 +156,6 @@ blockquote {
     padding: 0;
     z-index: 2;
 }
-.menu-toggle > label {
-    color: #045866;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
 .full-menu {
     display: none;
 }
@@ -161,12 +163,14 @@ blockquote {
 input {
     display: none;
 }
-.open {
-    cursor: pointer;
-}
-.menuOpen {
+
+.menuOpen, .menuClose {
     float: right;
     margin-top: -5.5rem;
+    cursor: pointer;
+    color: #045866;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 .mobile {
     margin: 3rem 0 0 3rem;
@@ -177,19 +181,10 @@ input {
     height: 100vh;
     left: 0;
     top: 0;
-    width: 100vw;
-}
-.mobileMenu label {
-    position: absolute;
-    right: 24px;
-    top: 16px;
-    background-size: 100%;
-    cursor: pointer;
-}
-.mobileMenu p {
-    color: #045866;
-    font-size: 2.5rem;
-    font-weight: 700;
+    width: 100vw; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
 }
 .mobileMenu .menuContent {
     position: relative;
@@ -207,32 +202,30 @@ input {
     color: #02363F;
     transition: color .5s;
 }
-.menuEffects {
+
+/* UL Effects when menu appears */
+.menuList {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
 }
-.menuEffects ul {
-    transform: translateY(0%);
-    transition: all .5s;
-}
-#menuToggle:checked ~ .menuEffects {
+
+/* effects when menu is open */
+.open {
     opacity: 1;
     visibility: visible;
     transform: opacity 0.5s;
 }
-#menuToggle:checked ~ .menuEffects ul {
-    opacity: 1;
+/* UL effects when menu is open after menu is open */
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-30%); }
+    100% { opacity: 1; transform: translateY(0%); }
 }
-#menuToggle:checked ~ .menuOpen .open {
-    background-color: transparent;
+.appear {
+    animation: slideDown .5s;
+    /* transition: all .5s; */
 }
-#menuToggle:not(:checked) ~ .menuEffects ul {
-    transform: translateY(-30%);
-}
-.menuContent ul li a:active ~ .mobileEffects {
-    opacity: 0;
-    visibility: hidden;
+.test {
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 /*** SECTIONS ****/ 
@@ -607,8 +600,8 @@ footer {
 
 
 
-/* DESKTOP */
-@media screen and (min-width: 992px) {
+/* DESKTOP 992px */
+@media screen and (min-width: 1240px) {
     .container {
         width: 70%;
     }
