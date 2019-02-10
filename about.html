@@ -21,7 +21,24 @@
         </div>
         <!--Dropdown MENU-->
         <div class="menu-toggle">
-            <p>+ Menu</p>
+            <!-- Opens menu -->
+            <div class="menuOpen" id="menuToggle" onclick="openMenu()">+ Menu</div>
+            <div class="mobileMenu">
+                <div class="kgrl-logo mobile">
+                    <a href="index.html"><img src="assets/kgrl-logo-primary.svg" alt="KGRL Logo" class="no-shadow no-marg-pad"></a>
+                </div>
+                <!-- Closes menu -->
+                <div class="menuClose" id="menuToggle" onclick="closeMenu()">– Menu</div>
+                <div class="menuContent">
+                    <!-- Also closes menu -->
+                    <ul class="menuList" onclick="closeMenu()">
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/kgrl-2019-resume.pdf">Résumé</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>            
+                </div>
+            </div> 
         </div>
         <!--Desktop MENU-->
             <div class="full-menu">
@@ -85,5 +102,6 @@
         </div>
     </footer>
     </div>
+    <script src="scripts/mobilemenu.js"></script>
 </body>
 </html>
