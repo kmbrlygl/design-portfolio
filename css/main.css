@@ -653,6 +653,10 @@ footer {
     .resume {
         margin-bottom: 20rem;
     }
+    /* Case Study */
+    .three-col {
+        width: 25%;
+    }
 }
 
 
@@ -751,9 +755,6 @@ footer {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-    }
-    .three-col {
-        width: 25%;
     }
     .card {
         width: 31.5%;
