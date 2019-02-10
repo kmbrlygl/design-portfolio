@@ -197,7 +197,7 @@ blockquote {
 .mobileMenu {
     background-color: #EAD2C1;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     left: 0;
     top: 0;
     width: 100vw; 
@@ -243,6 +243,10 @@ blockquote {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s linear;
+}
+/* No scroll when menu is active */
+.noScroll {
+    overflow: hidden;
 }
 
 /* UL effects when menu is open after menu is open/closed */
@@ -309,7 +313,7 @@ section {
 }
 footer {
     background: url(/assets/svgs/footer.svg) bottom center no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     margin: 0 -10%;
     padding: 5rem 10% 3rem 10%;
 }
