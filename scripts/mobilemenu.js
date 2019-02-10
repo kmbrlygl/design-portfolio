@@ -15,15 +15,6 @@ function removeClass() {
     document.querySelector(".menuList").classList.add("disappear");
 }
 
-// window.onscroll = function() {
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         document.querySelector(".main_menu").classList.add("test");
-//     }
-//     else {
-//         document.querySelector(".main_menu").classList.remove("test");
-//     }
-// }
-
 // Make Mobile Menu disappear scrolling down/ appear scroll up
 var scrollPos = 0;
 window.addEventListener('scroll', function(){
