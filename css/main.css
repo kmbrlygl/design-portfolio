@@ -618,9 +618,22 @@ footer {
     }
 }
 
+/* TABLET LANDSCAPE */
+@media screen and (min-width: 992px) {
+    /* About Page */
+    .introduction {
+        max-height: 104rem;
+    }
+    .growth {
+        max-height: 169rem;
+    }
+    .resume {
+        margin-bottom: 14rem;
+    }
+}
 
 
-/* DESKTOP 992px */
+/* DESKTOP 1240px */
 @media screen and (min-width: 1240px) {
     .container {
         width: 70%;
