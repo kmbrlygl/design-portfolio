@@ -571,6 +571,9 @@ footer {
     .project-heading, .hero-details, .proto-links {
         width: 50%;
     }
+    .desktop-proto {
+        display: inherit;
+    }
     .crue-hero {
         order: 2;
         padding-top: 5rem;
