@@ -133,7 +133,7 @@ blockquote {
 .main_menu {
     align-items: center;
     background: url(/assets/svgs/main_menu-sm.svg) top center no-repeat;
-    background-size: cover;
+    background-size: auto 100px;
     /* display: flex; */
     justify-content: space-between;
     letter-spacing: 2px;
@@ -159,8 +159,8 @@ blockquote {
 .full-menu {
     display: none;
 }
-/* Mobile MENU  */
 
+/* Mobile MENU  */
 .menuOpen, .menuClose {
     float: right;
     margin-top: -5.5rem;
@@ -191,7 +191,7 @@ blockquote {
     top: 50%;
     text-align: center;
     text-transform: uppercase;
-    margin-top: -30rem;
+    margin-top: -26rem;
 }
 .menuContent ul {
     font-size: 4rem;
