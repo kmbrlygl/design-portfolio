@@ -28,11 +28,11 @@ function removeClass() {
 var scrollPos = 0;
 window.addEventListener('scroll', function(){
     if (document.body.getBoundingClientRect().top > scrollPos) {
-        document.querySelector(".main_menu").classList.remove("test");
-        document.querySelector(".main_menu").classList.add("test2");
+        document.querySelector(".main_menu").classList.remove("menuHide");
+        document.querySelector(".main_menu").classList.add("menuAppear");
     } else {
-        document.querySelector(".main_menu").classList.remove("test2");
-        document.querySelector(".main_menu").classList.add("test");
+        document.querySelector(".main_menu").classList.remove("menuAppear");
+        document.querySelector(".main_menu").classList.add("menuHide");
     }
     scrollPos = (document.body.getBoundingClientRect()).top;
 });

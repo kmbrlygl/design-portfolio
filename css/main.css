@@ -215,12 +215,12 @@ blockquote {
     visibility: visible;
     transform: opacity 0.5s;
 }
-.test {
+.menuHide {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
-.test2 {
+.menuAppear {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s linear;
