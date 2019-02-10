@@ -160,9 +160,6 @@ blockquote {
     display: none;
 }
 /* Mobile MENU  */
-input {
-    display: none;
-}
 
 .menuOpen, .menuClose {
     float: right;
@@ -171,6 +168,9 @@ input {
     color: #045866;
     font-size: 2.5rem;
     font-weight: 700;
+}
+.menuClose {
+    margin-right: 3rem;
 }
 .mobile {
     margin: 3rem 0 0 3rem;
@@ -202,31 +202,48 @@ input {
     color: #02363F;
     transition: color .5s;
 }
-
-/* UL Effects when menu appears */
 .menuList {
     opacity: 0;
 }
-
+.close {
+    opacity: 0;
+    visibility: hidden;
+}
 /* effects when menu is open */
 .open {
     opacity: 1;
     visibility: visible;
     transform: opacity 0.5s;
 }
-/* UL effects when menu is open after menu is open */
+.test {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.test2 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+/* UL effects when menu is open after menu is open/closed */
 @keyframes slideDown {
     0% { opacity: 0; transform: translateY(-30%); }
     100% { opacity: 1; transform: translateY(0%); }
 }
 .appear {
     animation: slideDown .5s;
-    /* transition: all .5s; */
+    opacity: 1;
 }
-.test {
-    opacity: 0 !important;
-    visibility: hidden !important;
+@keyframes slideUp {
+    0% { opacity: 1; transform: translateY(0%); }
+    100% { opacity: 0; transform: translateY(-30%); }
 }
+.disappear {
+    animation: slideUp .5s;
+    opacity: 1;
+}
+
 
 /*** SECTIONS ****/ 
 
