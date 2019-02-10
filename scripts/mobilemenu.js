@@ -24,7 +24,7 @@ window.addEventListener('scroll', function(){
     if (document.body.getBoundingClientRect().top > scrollPos) {
         document.querySelector(".main_menu").classList.remove("menuHide");
         document.querySelector(".main_menu").classList.add("menuAppear");
-    } else if (!document.querySelector("body").classList.contains("noScroll")) {
+    } else if (!document.querySelector("body").classList.contains("noScroll") && document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.querySelector(".main_menu").classList.remove("menuAppear");
         document.querySelector(".main_menu").classList.add("menuHide");
     }
