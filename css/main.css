@@ -30,10 +30,12 @@ body {
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); */
     border-radius: 10px;
     color: #A54724;
+    cursor: pointer;
     font-family: 'Miriam Libre', sans-serif;
     font-size: 2rem;
     padding: 2rem;
     text-transform: uppercase;
+    width: 100%;
 }
 .btn {
     text-align: center;
@@ -84,14 +86,15 @@ h2:before
     width: 100px;
 }
 h3 {
-    color: #045866;
-    letter-spacing: 1.5px;
+    font-size: 3rem;
+    color: rgba(4, 88, 102, .8);
+    /* letter-spacing: 1.5px; */
     margin-bottom: 6rem;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 h4 {
-    color: #045866;
+    color: #A54724;
     font-size: 2.25rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -101,6 +104,7 @@ h4 {
 }
 a {
     color: #045866;
+    cursor: pointer;
     font-weight: 700;
     position: relative;
     text-align: center;
@@ -143,7 +147,7 @@ blockquote {
     border-left: 3px solid #A54724; 
     font-family: 'Miriam Libre', sans-serif;
     line-height: 1.5;
-    margin: 1rem 0 2rem 0;
+    margin: 5rem 0;
     padding-left: 2rem;
 }
 
@@ -363,8 +367,8 @@ footer {
 }
 .project-nav li {
     display: inline;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    letter-spacing: .5px;
+    /* text-transform: uppercase; */
 }
 .copper-blt {
     color: #A54724;
@@ -389,7 +393,7 @@ footer {
 .insights {
     border: 0;
     min-height: 6rem;
-    margin: 2rem 1rem;
+    margin: 4rem 0 1rem 0;
     padding: 0;
 }
 /* percentage dropcap */
@@ -504,15 +508,15 @@ footer {
     ul {
         padding: 0 10%;
     }
-    .btn {
+    .btn, .left, h3 {
         text-align: initial;
-    }
-    .left {
-        text-align: left;
     }
     footer {
         margin: 0 -20%;
         padding: 5rem 20% 3rem 20%;
+    }
+    .cta-button {
+        width: inherit;
     }
 
 
@@ -620,6 +624,21 @@ footer {
     }
     .card {
         margin: 3rem 0;
+        width: 32.5%;
+    }
+    .card-layout {
+        margin: 0 -7%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .personas {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .persona:first-child {
+        margin-right: 5%;
+    }
+    .persona {
         width: 47.5%;
     }
     .demo {
@@ -664,6 +683,7 @@ footer {
 @media screen and (min-width: 1240px) {
     .container {
         width: 70%;
+        /* max-width: 159rem; Trying to figure out how to center with a set width*/
     }
     .menu-toggle {
         display: none;
@@ -750,11 +770,14 @@ footer {
         text-align: left;
     }
     .project-nav ul {
-        font-size: 2rem;
+        font-size: 2.25rem;
         padding: 0;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+    }
+    .copper-blt {
+        margin: 0 1rem;
     }
     .card {
         width: 31.5%;
@@ -762,8 +785,15 @@ footer {
     .space-around {
         justify-content: space-around;
     }
+    .personas {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .persona:first-child {
+        margin-right: 0;
+    }
     .persona {
-        width: 40%;
+        width: 31.5%;
     }
     .demo-text {
         margin-left: 0;
