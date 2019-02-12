@@ -514,6 +514,7 @@ footer {
     }
     .cta-button {
         width: inherit;
+        min-width: 30rem;
     }
 
 
