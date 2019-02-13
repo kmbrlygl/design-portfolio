@@ -475,6 +475,10 @@ footer {
     margin: 2rem 0;
     text-align: center;
 }
+.img-cap p {
+    font-style: italic;
+    margin: 0 0 2rem 0;
+}
 
 /* Preference test */
 .pref-option {
@@ -647,7 +651,7 @@ footer {
         width: 50%;
     }
     .pref-option {
-        width: 45%;
+        /* width: 45%; */
     }
     .mobile-hifi {
         width: 47.5%;
