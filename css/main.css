@@ -328,8 +328,11 @@ footer {
 .introduction {
     padding-top: 8rem;
 }
-.heading > h1 {
+.left-col {
     text-align: center;
+}
+.hide-mobile {
+    display: none;
 }
 
 /*** CASE STUDY PAGES ***/
@@ -472,7 +475,7 @@ footer {
 }
 .img-cap {
     font-style: italic;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     text-align: center;
 }
 .img-cap p {
@@ -564,28 +567,21 @@ footer {
     /* About Me */
     .introduction, .growth {
         display: flex;
-        flex-flow: column wrap;
+        justify-content: center;
     }
-    .introduction {
-        max-height: 152rem;
-    }
-    .growth {
-        max-height: 209rem;
-    }
-    .bio-photo, .bio-imgs {
-        order: -1;
+    .left-col {
         width: 45%;
+        padding-right: 5%;
+        text-align: inherit;
     }
-    .bio-imgs {
-        margin-bottom: 120rem;
-    }
-    .intro-hero, .intro-bio {
-        margin-left: 5%;
+    .right-col {
         width: 50%;
     }
-    .resume {
-        margin-bottom: 60rem;
-        order: -1;
+    .hide-tab-larger {
+        display: none;
+    }
+    .hide-mobile {
+        display: inherit;
     }
 
     /* Case Study */
@@ -746,7 +742,7 @@ footer {
         padding: 10rem 30%;
     }
     .growth {
-        max-height: 127rem;
+        /* max-height: 127rem; */
     }
     .resume {
         margin-bottom: 18rem;
