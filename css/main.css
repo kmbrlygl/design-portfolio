@@ -509,6 +509,9 @@ footer {
     margin: 0 -20%;
     padding: 10rem 20%;       
     }
+    h1 {
+        font-size: 5.5rem;
+    }
     ul {
         padding: 0 10%;
     }
@@ -706,10 +709,14 @@ footer {
         margin: 0 -30%;
         padding: 10rem 30%;       
     }
+    h1 {
+        font-size: 6rem;
+    }
     footer {
         margin: 0 -30%;
         padding: 5rem 30% 3rem 30%;
     }
+
     /* Homepage  */
     .hero {
         margin: 0 -25% 0 -30%;
