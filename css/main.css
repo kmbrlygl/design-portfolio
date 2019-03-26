@@ -54,6 +54,15 @@ img {
     margin: 0;
     padding: 0;
 }
+/* hand lettered illustrations */
+.hey-there {
+    height: 1.9em;
+    margin-bottom: -1.5rem;
+}
+.wave-hand {
+    height: 1.5em;
+    /* margin-bottom: -1rem; */
+}
 
 /* typography */
 p {
@@ -274,6 +283,9 @@ blockquote {
 /* hero */
 .hero {
     padding-top: 8rem;
+}
+.hero h1 {
+    max-width: 85rem;
 }
 .emphasize {
     font-family: p22-mackinac-pro, serif;
