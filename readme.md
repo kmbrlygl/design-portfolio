@@ -1,4 +1,3 @@
 # Hi there!
-Welcome to my 2019 portfolio. It's under construction (like always). Stay tuned!
-
-- Kimberly Gail R. Loseñara
+Welcome to my under-perpetual-construction Design portfolio. Thanks for taking a peek, feel free to say hello.
+Kimberly Gail
