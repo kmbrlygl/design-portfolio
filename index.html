@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="/kgrl-logo-solid.png" type="image/x-icon">
     <link rel="icon" href="/kgrl-logo-solid.png" type="image/x-icon">
 </head>
-<body>
+<body onload="fetchToken()">
     <div class="container">
     <nav class="main_menu">
         <div class="kgrl-logo">
@@ -58,6 +58,7 @@
                 </h1>
                 <p>* Yup, that's my first name.</p>
             </div>
+            <!-- <div id="instafeed"></div> -->
         </section>
         <section class="align-left-big-desktop">
             <div class="about">
@@ -156,8 +157,31 @@
     </footer>
     </div>
     <script src="scripts/mobilemenu.js"></script>
+    <script text="text/javascript" src="scripts/config.js"></script>
+    <script type="text/javascript" src="scripts/instafeed.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134132744-1"></script>
+    <script>
+        function fetchToken() {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        headers.append('Origin','localhost:8000', 'https://kgrl.design');
+        fetch(`https://ig.instant-tokens.com/users/09cae683-62eb-4aaa-aeed-f6cbca4caad1/instagram/17841400623182820/token?userSecret=${config.INSTANT_TOKEN_USER_SECRET}`, {
+          method: 'GET',
+          mode: 'cors',
+          // credentials: 'omit',
+          headers: headers,
+        }).then((res) => {
+          res.json().then((data) => {
+            var feed = new Instafeed({
+              accessToken: data.Token
+            });
+            feed.run();
+          })
+        });
+      }
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
