@@ -1,0 +1,3 @@
+const config = {
+  INSTANT_TOKEN_USER_SECRET: "INSERT_TOKEN_HERE",
+};
