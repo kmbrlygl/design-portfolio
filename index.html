@@ -58,7 +58,6 @@
                 </h1>
                 <p>* Yup, that's my first name.</p>
             </div>
-            <!-- <div id="instafeed"></div> -->
         </section>
         <section class="align-left-big-desktop">
             <div class="about">
@@ -112,15 +111,13 @@
                 </div> -->
             </div>
             <div class="more-projects align-left-big-desktop">
-                <h2>Other projects I’ve worked on</h2>
+                <h2>Lettering - IG @thingsmyhands</h2>
                 <div class="other-projects">
                     <div class="project">
-                        <h4>→ Branding & Print</h4>
-                        <a href="https://kmbrlygl.github.io/work/wmargaron/" target="_blank" rel="noopener"><img src="assets/branding.jpg" alt="Preview of branding project for a macaron business"></a>
+                        <a href="https://www.instagram.com/thingsmyhands/" target="_blank" rel="noopener"><img src="assets/lettering.jpg" alt="Lettering illustration that says 'Prime Time Grind Time'"></a>
                     </div>
                     <div class="project">
-                        <h4>→ Lettering Illustrations</h4>
-                        <a href="https://www.instagram.com/thingsmyhands/" target="_blank" rel="noopener"><img src="assets/lettering.jpg" alt="Lettering illustration that says 'Prime Time Grind Time'"></a>
+                        <div id="instafeed" class="instafeed"></div>
                     </div>                    
                 </div>
             </div>
@@ -175,7 +172,8 @@
         }).then((res) => {
           res.json().then((data) => {
             var feed = new Instafeed({
-              accessToken: data.Token
+              accessToken: data.Token,
+              limit: 6
             });
             feed.run();
           })
