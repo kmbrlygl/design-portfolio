@@ -560,7 +560,7 @@ footer {
 .instafeed {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   grid-column-gap: 4.5rem;
   grid-row-gap: 4.5rem;
   max-width: 64rem;
@@ -650,7 +650,7 @@ footer {
     justify-content: space-between;
   }
   .more-projects {
-    margin-top: 15rem;
+    padding: 15rem 0 0 0;
   }
   .project {
     width: 45%;
