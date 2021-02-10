@@ -307,6 +307,9 @@ blockquote {
 .hero > * {
   text-align: center;
 }
+.headshot {
+  display: none;
+}
 
 /* work */
 .featured-img {
@@ -581,6 +584,9 @@ footer {
   .hero > * {
     text-align: initial;
   }
+  .hero-buttons {
+    margin: 0 auto;
+  }
   .about {
     display: flex;
     /*flex-flow: column wrap;*/
@@ -593,12 +599,6 @@ footer {
     margin-right: 10%;
     order: -1;
     width: 40%;
-  }
-  .headshot {
-    display: none;
-  }
-  .hide-tablet {
-    display: none;
   }
   .featured-project {
     display: flex;
@@ -796,12 +796,32 @@ footer {
     margin: 0 -25% 0 -30%;
     padding: 10rem 30% 18rem 30%;
   }
+  .hero-buttons {
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 69%;
+  }
   .heading,
   .bio {
     width: 50%;
   }
   .headshot {
     display: inherit;
+    flex: 1;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  .lead-in {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hello {
+    flex: 2;
   }
   .project-descript {
     font-size: 4rem;
