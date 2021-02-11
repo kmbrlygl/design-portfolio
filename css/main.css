@@ -361,10 +361,11 @@ blockquote {
   height: 100%; 
   overflow: auto; 
   background-color: rgba(0,0,0,0.4);  
+  animation-timing-function: ease-in;
 }
 .modal-content {
   background-color: #ffffff;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 10vh auto; 
   padding: 20px;
   width: 80%;
 }
@@ -402,8 +403,8 @@ blockquote {
 
 /* Add Animation */
 @keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {transform: translateY(30%); opacity: 0}
+  to {transform: translateY(0%); opacity: 1}
 }
 
 /* spacing after sections */
@@ -713,6 +714,16 @@ footer {
   .project:last-child {
     margin-right: 5%;
   }
+  /* DESCO posts */
+.desco-social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.desco-social > img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
 
   /* About Me */
   .introduction,
@@ -906,6 +917,7 @@ footer {
   .project-descript {
     font-size: 4rem;
   }
+  
 
   /* About Me */
   .introduction {
