@@ -375,7 +375,6 @@ blockquote {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close-button:hover,
 .close-button:focus {
   color: #045866;
@@ -385,10 +384,6 @@ blockquote {
 .modal-header {
   padding: 2px 16px;
 }
-
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
-
 
 /* Modal Content */
 .modal-content {
@@ -400,6 +395,14 @@ blockquote {
   animation-duration: 0.4s;
   border-radius: 10px;
 }
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;
+}
+.ceh-project > img {
+  margin: 1rem;
+}
+
 
 /* Add Animation */
 @keyframes animatetop {
@@ -926,6 +929,21 @@ footer {
     margin: 0 -30%;
     max-height: 104rem;
     padding: 10rem 30%;
+  }
+
+  /* Visual Design Projects */
+  .ceh-project {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+  }
+  .ceh-project > img {
+    width: 40%;
+  }
+  .ceh-project > img:nth-child(2) {
+    width: 30%;
   }
 
   /* Case Study */
